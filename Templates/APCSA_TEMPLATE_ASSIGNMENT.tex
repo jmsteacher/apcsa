@@ -1,5 +1,5 @@
 \documentclass[11pt]{exam}
-\usepackage{amsmath,amssymb,enumitem,graphicx,listings,mathtools,multicol}
+\usepackage{amsmath,amssymb,enumitem,graphicx,listings,lstautogobble,mathtools,multicol}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage[paper=a4paper,margin=2.5cm]{geometry}
 
@@ -14,7 +14,7 @@
 \newcommand{\AssignmentDoubleNumber}{00}
 
 \lstset{language=Java}
-\lstset{showstringspaces=false,showspaces=false}
+\lstset{showstringspaces=false,showspaces=false,autogobble}
 
 \newcommand{\ColorQuestion}[2]{\renewcommand{\questionlabel}{\colorbox{#1}{\color{white}\thequestion}\hfill}\question #2}
 \newcommand{\BlueQuestion}[1]{\ColorQuestion{RoyalBlue}{#1}}
