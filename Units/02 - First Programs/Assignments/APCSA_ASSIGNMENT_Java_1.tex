@@ -1,0 +1,69 @@
+\documentclass[11pt]{exam}
+\usepackage{amsmath,amssymb,enumitem,graphicx,listings,lstautogobble,mathtools,multicol}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[paper=a4paper,margin=2.5cm]{geometry}
+
+\title{[AP Computer Science A] Java Assignment \#1}
+\newcommand{\CourseName}{AP Computer Science A}
+\newcommand{\CourseInitials}{APCSA}
+\newcommand{\UnitTitle}{First Programs: An Introduction to Java}
+\newcommand{\UnitNumber}{2}
+\newcommand{\UnitDoubleNumber}{02}
+\newcommand{\AssignmentTitle}{Java Assignment \#1}
+\newcommand{\AssignmentNumber}{1}
+\newcommand{\AssignmentDoubleNumber}{01}
+
+\lstset{language=Java}
+\lstset{showstringspaces=false,showspaces=false,autogobble}
+
+\newcommand{\ColorQuestion}[2]{\renewcommand{\questionlabel}{\colorbox{#1}{\color{white}\thequestion}\hfill}\question #2}
+\newcommand{\BlueQuestion}[1]{\ColorQuestion{RoyalBlue}{#1}}
+\newcommand{\GreenQuestion}[1]{\ColorQuestion{ForestGreen}{#1}}
+\newcommand{\YellowQuestion}[1]{\ColorQuestion{Goldenrod}{#1}}
+\newcommand{\RedQuestion}[1]{\ColorQuestion{BrickRed}{#1}}
+\newcommand{\PurpleQuestion}[1]{\ColorQuestion{RoyalPurple}{#1}}
+
+\setlength{\parindent}{0pt}
+\setlist{itemsep=0pt}
+
+\firstpageheader{\CourseName}{}{\CourseInitials.\UnitDoubleNumber.\AssignmentDoubleNumber}
+\cfoot{\scshape\footnotesize\CourseName, Unit \#\UnitNumber---\UnitTitle---Assignment \#\AssignmentNumber\\ Woodstock School---Mussoorie, Uttarakhand---India}
+
+\begin{document}
+%Assignment Preamble...%
+	\begin{center}
+		\Large\AssignmentTitle
+	\end{center}
+%...Assignment Preamble%
+
+%Questions Start...%
+	\begin{questions}
+		\BlueQuestion{Given the value of \texttt{a} after the execution of each of the following sequences:}
+		\begin{enumerate}
+			\item
+				\begin{lstlisting}
+					int a = 1;
+					a = a + a;
+					a = a + a;
+					a = a + a;
+				\end{lstlisting}
+
+			\item
+				\begin{lstlisting}
+					double a = 2;
+					a = a * a;
+					a = a * a;
+					a = a * a;
+				\end{lstlisting}
+				
+			\item
+				\begin{lstlisting}
+					boolean a = true;
+					a = !a;
+					a = !a;
+					a = !a;
+				\end{lstlisting}
+		\end{enumerate}
+	\end{questions}
+%...Questions End%
+\end{document}

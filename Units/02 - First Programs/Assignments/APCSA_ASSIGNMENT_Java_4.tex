@@ -1,0 +1,48 @@
+\documentclass[11pt]{exam}
+\usepackage{amsmath,amssymb,enumitem,graphicx,listings,mathtools,multicol}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[paper=a4paper,margin=2.5cm]{geometry}
+
+\title{[AP Computer Science A] Assignment Template}
+\newcommand{\CourseName}{AP Computer Science A}
+\newcommand{\CourseInitials}{APCSA}
+\newcommand{\UnitTitle}{Unit Title}
+\newcommand{\UnitNumber}{0}
+\newcommand{\UnitDoubleNumber}{00}
+\newcommand{\AssignmentTitle}{Assignment Title}
+\newcommand{\AssignmentNumber}{0}
+\newcommand{\AssignmentDoubleNumber}{00}
+
+\lstset{language=Java}
+\lstset{showstringspaces=false,showspaces=false}
+
+\newcommand{\ColorQuestion}[2]{\renewcommand{\questionlabel}{\colorbox{#1}{\color{white}\thequestion}\hfill}\question #2}
+\newcommand{\BlueQuestion}[1]{\ColorQuestion{RoyalBlue}{#1}}
+\newcommand{\GreenQuestion}[1]{\ColorQuestion{ForestGreen}{#1}}
+\newcommand{\YellowQuestion}[1]{\ColorQuestion{Goldenrod}{#1}}
+\newcommand{\RedQuestion}[1]{\ColorQuestion{BrickRed}{#1}}
+\newcommand{\PurpleQuestion}[1]{\ColorQuestion{RoyalPurple}{#1}}
+
+\setlength{\parindent}{0pt}
+\setlist{itemsep=0pt}
+
+\firstpageheader{\CourseName}{}{\CourseInitials.\UnitDoubleNumber.\AssignmentDoubleNumber}
+\cfoot{\scshape\footnotesize\CourseName, Unit \#\UnitNumber---\UnitTitle---Assignment \#\AssignmentNumber\\ Woodstock School---Mussoorie, Uttarakhand---India}
+
+\begin{document}
+%Assignment Preamble...%
+	\begin{center}
+		\Large\AssignmentTitle
+	\end{center}
+%...Assignment Preamble%
+
+%Questions Start...%
+	\begin{questions}
+		\BlueQuestion{Test Question}
+		\GreenQuestion{Test Question}
+		\YellowQuestion{Test Question}
+		\RedQuestion{Test Question}
+		\PurpleQuestion{Test Question}
+	\end{questions}
+%...Questions End%
+\end{document}
