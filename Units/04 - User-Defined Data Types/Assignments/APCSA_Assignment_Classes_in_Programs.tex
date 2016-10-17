@@ -1,0 +1,53 @@
+\documentclass[11pt]{exam}
+\usepackage{amsmath,amssymb,enumitem,graphicx,listings,lstautogobble,mathtools,multicol}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[paper=a4paper,margin=2.5cm]{geometry}
+
+\title{[AP Computer Science A] Assignment Template}
+\newcommand{\CourseName}{AP Computer Science A}
+\newcommand{\CourseInitials}{APCSA}
+\newcommand{\UnitTitle}{User-Defined Data Types}
+\newcommand{\UnitNumber}{4}
+\newcommand{\UnitDoubleNumber}{04}
+\newcommand{\AssignmentTitle}{Classes in Programs}
+\newcommand{\AssignmentNumber}{2}
+\newcommand{\AssignmentDoubleNumber}{02}
+
+\lstset{language=Java}
+\lstset{showstringspaces=false,showspaces=false,autogobble}
+
+\newcommand{\ColorQuestion}[2]{\renewcommand{\questionlabel}{\colorbox{#1}{\color{white}\thequestion}\hfill}\question #2}
+\newcommand{\BlueQuestion}[1]{\ColorQuestion{RoyalBlue}{#1}}
+\newcommand{\GreenQuestion}[1]{\ColorQuestion{ForestGreen}{#1}}
+\newcommand{\YellowQuestion}[1]{\ColorQuestion{Goldenrod}{#1}}
+\newcommand{\RedQuestion}[1]{\ColorQuestion{BrickRed}{#1}}
+\newcommand{\PurpleQuestion}[1]{\ColorQuestion{RoyalPurple}{#1}}
+
+\setlength{\parindent}{0pt}
+\setlist{itemsep=0pt}
+
+\firstpageheader{\CourseName}{}{\CourseInitials.\UnitDoubleNumber.\AssignmentDoubleNumber}
+\cfoot{\scshape\footnotesize\CourseName, Unit \#\UnitNumber---\UnitTitle---Assignment \#\AssignmentNumber\\ Woodstock School---Mussoorie, Uttarakhand---India}
+
+\begin{document}
+%Assignment Preamble...%
+	\begin{center}
+		\Large\AssignmentTitle
+	\end{center}
+%...Assignment Preamble%
+
+%Questions Start...%
+	\begin{questions}
+        \RedQuestion{Choose a piece of computer software you are very familiar with and create a UML diagram with the following requirements:}
+        \begin{itemize}
+            \item include at least $5$ classes that are part of your chosen software,
+            \item each class must have at least $3$ attributes and $1$ method,
+            \item at least $1$ of the classes must be ``hidden" to the user (have no visible components),
+            \item at least $2$ of the classes must be subclasses of another class (they don't need to have the same super class).
+        \end{itemize}
+        \YellowQuestion{Add sample objects to your UML diagram for each of the classes.}
+        
+        {\small\textbf{Note:} You can submit a single diagram as your solutions for Questions \#1 \& \#2.}
+	\end{questions}
+%...Questions End%
+\end{document}

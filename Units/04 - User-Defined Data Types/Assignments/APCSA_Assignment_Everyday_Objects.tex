@@ -1,0 +1,56 @@
+\documentclass[11pt]{exam}
+\usepackage{amsmath,amssymb,enumitem,graphicx,listings,mathtools,multicol}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[paper=a4paper,margin=2.5cm]{geometry}
+
+\title{[AP Computer Science A] Assignment Template}
+\newcommand{\CourseName}{AP Computer Science A}
+\newcommand{\CourseInitials}{APCSA}
+\newcommand{\UnitTitle}{User-Defined Data Types}
+\newcommand{\UnitNumber}{4}
+\newcommand{\UnitDoubleNumber}{04}
+\newcommand{\AssignmentTitle}{Everyday Objects}
+\newcommand{\AssignmentNumber}{1}
+\newcommand{\AssignmentDoubleNumber}{01}
+
+\lstset{language=Java}
+\lstset{showstringspaces=false,showspaces=false}
+
+\newcommand{\ColorQuestion}[2]{\renewcommand{\questionlabel}{\colorbox{#1}{\color{white}\thequestion}\hfill}\question #2}
+\newcommand{\BlueQuestion}[1]{\ColorQuestion{RoyalBlue}{#1}}
+\newcommand{\GreenQuestion}[1]{\ColorQuestion{ForestGreen}{#1}}
+\newcommand{\YellowQuestion}[1]{\ColorQuestion{Goldenrod}{#1}}
+\newcommand{\RedQuestion}[1]{\ColorQuestion{BrickRed}{#1}}
+\newcommand{\PurpleQuestion}[1]{\ColorQuestion{RoyalPurple}{#1}}
+
+\setlength{\parindent}{0pt}
+\setlist{itemsep=0pt}
+
+\firstpageheader{\CourseName}{}{\CourseInitials.\UnitDoubleNumber.\AssignmentDoubleNumber}
+\cfoot{\scshape\footnotesize\CourseName, Unit \#\UnitNumber---\UnitTitle---Assignment \#\AssignmentNumber\\ Woodstock School---Mussoorie, Uttarakhand---India}
+
+\begin{document}
+%Assignment Preamble...%
+	\begin{center}
+		\Large\AssignmentTitle
+	\end{center}
+%...Assignment Preamble%
+
+%Questions Start...%
+	\begin{questions}
+		\YellowQuestion Compile a list of at least $3$ ``classes" you interact with on a daily basis. For each class, include at least $3$ attributes and $1$ method as part of your list.
+
+        {\small\textbf{Hint:} You might want to consider ``objects" first; then, abstract these objects into relevant classes.}
+
+        \vspace{1cm}
+
+        \YellowQuestion For each of your classes, provide $2$ example ``objects" that would be of that type. Include values for the attributes you detailed in Question \#1.
+
+        {\small\textbf{Hint:} If you used the hint for Question \#1, you'll already have one example object in mind for each of your classes.}
+        
+        \vspace{1cm}
+
+        \YellowQuestion Choose one of your classes and its related objects. Create UML Class and Object diagrams for this class and its objects.
+	\end{questions}
+%...Questions End%
+\end{document}
