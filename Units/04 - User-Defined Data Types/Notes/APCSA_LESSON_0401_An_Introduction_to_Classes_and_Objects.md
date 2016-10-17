@@ -8,8 +8,7 @@ Definitions:
 
 **Definition: Object**
 
-An *object* is a collection of data (*attributes*) and behaviors (*methods*).
-
+An *object* is a collection of data (*attributes*) and behaviors (*methods*).\
 _Note_: Often, the behaviors of an object act based on the data carried by the object.
 
 **Definition: Class**
