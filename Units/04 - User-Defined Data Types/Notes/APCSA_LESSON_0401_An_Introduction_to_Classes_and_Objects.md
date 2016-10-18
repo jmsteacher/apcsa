@@ -16,7 +16,7 @@ A *class* is a definition for a collection of objects detailing expected attribu
 
 A *class* represents a new _data type_ representing complex combinations of different data and the operations that can be performed on that data.
 
-We say that an object is **an instance of** a class.
+We say that an object is an **instance of** a class.
 
 ***
 
@@ -79,7 +79,7 @@ _Note_: Because methods represent operations on an object's data, they are not u
 
 UML Diagrams
 ---
-A **U**niversal **M**odeling **L**anguage diagram is a special type of diagram designed to convey useful information about a computer system. There are a number of different types of UML diagrams. 
+A **U**niversal **M**odelling **L**anguage diagram is a special type of diagram designed to convey useful information about a computer system. There are a number of different types of UML diagrams. 
 
 A _class diagram_ conveys useful information about a class. Below is the UML Class Diagram for the `Human` class.
 
