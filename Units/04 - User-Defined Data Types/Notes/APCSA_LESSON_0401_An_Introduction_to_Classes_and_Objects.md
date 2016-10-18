@@ -7,14 +7,14 @@ Definitions:
 
 **Definition: Object**
 
-An *object* is a collection of data (*attributes*) and behaviors (*methods*).\
+An _object_ is a collection of data (_attributes_) and behaviors (_methods_).\
 _Note_: Often, the behaviors of an object act based on the data carried by the object.
 
 **Definition: Class**
 
-A *class* is a definition for a collection of objects detailing expected attributes and methods.
+A _class_ is a definition for a collection of objects detailing expected attributes and methods.
 
-A *class* represents a new _data type_ representing complex combinations of different data and the operations that can be performed on that data.
+A _class_ represents a new _data type_ representing complex combinations of different data and the operations that can be performed on that data.
 
 We say that an object is an **instance of** a class.
 
