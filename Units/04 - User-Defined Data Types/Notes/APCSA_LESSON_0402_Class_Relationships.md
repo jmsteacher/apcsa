@@ -15,7 +15,7 @@ You'll notice that `Cat` and `Dog` contain a very similar list of attributes and
 
 | Pros | Cons |
 | --- | --- |
-| All information about a `Cat` or `Dog` is contained in the individual classes. | Systems need to be created to handle both instances as necessary. ||
+| All information about a `Cat` or `Dog` is contained in the individual classes. | Systems need to be created to handle both instances as necessary. |
 | Deeper analysis of these common attributes and/or methods does not need to take place. | Systems handling these two classes might need to be expanded to handle additional classes as necessary, even for common purposes (i.e., the Pet registration mentioned earlier). |
 | | Adding additional common attributes and/or methods requires changing both classes. |
 | | Changing implementation details of the common attributes and/or methods requires changing both classes. |
@@ -40,7 +40,7 @@ Consider the `Cat` and `Dog` classes above. These classes share the attributes {
 ![Pet Class](Images/PetClass.png "Pet Class")
 
 We can then create `Cat` and `Dog` as _sub classes_ of the `Pet` class.\
-_Note:_ The method by which we implement class inheritance is highly dependent on the programming language being used. We will be discussing implementation details in Java at a later date. Below is the method of denoting class inheritance in a UML diagram. 
+_Note:_ The method by which we implement class inheritance is highly dependent on the programming language being used. We will be discussing implementation details in Java at a later date. Below is the method of denoting class inheritance in a UML diagram.
 
 ![Pet/Cat/Dog Hierarchy](Images/PetCatDogClasses.png "Pet/Cat/Dog Hierarchy")
 
@@ -84,12 +84,12 @@ Does this mean that `Cat` and `Human` are never going to be sub classes of the s
 
 _Designing a system of classes should take the scope of the software system into account._
 
-In other words, you don't need to create _every_ possible parent and child relationship within your software system, just the ones that make sense for the context in which you are using your system. 
+In other words, you don't need to create _every_ possible parent and child relationship within your software system, just the ones that make sense for the context in which you are using your system.
 
 In our previous example of a Woodstock Pet Registry, for instance, you might want a `Human` owner and a `Cat` and `Dog` `Pet`, but you don't need to concern yourself that `Human`, `Cat`, and `Dog` are all different animals and, as such, don't need to create a more generic `Animal` class.
 
 ***
-**Exercise:** Create an `Owner` subclass of the `Human` class. What new attributes and/or methods should be included that don't belong in the more generic `Human` class? 
+**Exercise:** Create an `Owner` subclass of the `Human` class. What new attributes and/or methods should be included that don't belong in the more generic `Human` class?
 
 Use [draw.io](http://draw.io) to create the relevant UML class diagram.
 ***
@@ -97,7 +97,7 @@ Use [draw.io](http://draw.io) to create the relevant UML class diagram.
 The "has-a" Class Relationship
 ---
 
-You'll notice from our previous `Pet` diagrams that `Pet` has an attribute of type `Human` (in fact, we are going to change this to type `Owner` now that you've created this class). In this case, we can say that a `Pet` _has a(n)_ `Owner`. 
+You'll notice from our previous `Pet` diagrams that `Pet` has an attribute of type `Human` (in fact, we are going to change this to type `Owner` now that you've created this class). In this case, we can say that a `Pet` _has a(n)_ `Owner`.
 
 Likewise, you might have had an attribute of type `Pet` in your `Owner` class (as our example `Owner` below does). In this case, we can once again say that an `Owner` _has a_ `Pet`.
 
