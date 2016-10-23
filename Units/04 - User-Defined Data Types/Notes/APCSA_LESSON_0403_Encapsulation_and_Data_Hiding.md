@@ -13,6 +13,7 @@ _Encapsulation_ is an object-oriented-programming concepts that suggests data an
 **Definition: Data Hiding**
 
 _Data or Information Hiding_ is a concept closely related to the concept of _encapsulation_. In particular, it states that data should be hidden from view from parts of a system other than those objects directly responsible for the data. Access to data, therefore, should happen only through the responsible objects.
+***
 
 The `private` Java Keyword
 ---
@@ -73,6 +74,7 @@ _Note:_ There will often be times where you create a _getter_ method without a c
 Ignoring the obvious logic error in the method above, we can see that a `Human` object now has a calculated attribute: `YearOfBirth`, even though it does not contain any stored data to that effect. 
 
 By forcing clients of our class to access attributes via _getter_ and _setter_ methods, we effectively hide implementation details of our attributes, as well as ensure proper access (both in obtaining and setting values). These benefit is well worth the added work of creating these methods for each of our attributes (or at least the ones we want to provide access to).
+***
 
 `public` vs. `private` Methods
 ---
@@ -99,4 +101,15 @@ This method will be available to any parts of the `Human` class; however, becaus
 
 ***
 **Excercise:** From our work with classes in the past, you'll note that our class _constructors_ are also prefixed by the `public` keyword. What would the effects of making a `private` constructor be? Can you imagine any instances when you'll want to make a constructor `private`?
+***
+
+UML Digrams: Private Attributes & Methods
+---
+
+Private attributes with _getter_ and/or _setter_ methods are often included in the corresponding UML class diagram. To denote these attributes are private, the "+" before each is replaced with a "-". Attributes without any external way of accessing them are used for internal implementation only and, so, are often not included in the class diagrams.
+
+Private methods are almost never included in a class diagram; however, if they are, the same change from a "+" to a "-" occurs.
+
+***
+**Exercise:** Modify the `Human` class diagram developed in previous lessons to reflect our change to `private` attributes.
 ***
